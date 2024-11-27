@@ -1,0 +1,66 @@
+body {
+  background-image: url("../assets/bg-default.jpg");
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+.row {
+  width: 1000px;
+  margin: 0 auto;
+  /*  way 1 */
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+  /*  way 2 */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+}
+
+.col {
+  width: 300px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.preview img {
+  width: 100%;
+  display: block;
+}
+.bottom {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.avatar img {
+  width: 100%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.channel_name,
+.owner_name {
+  color: #fff;
+  font-size: 14px;
+  /* 缺一不可 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+  overflow: hidden;
+  /* 缺一不可 */
+}
