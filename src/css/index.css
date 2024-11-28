@@ -17,6 +17,7 @@ body {
   /* display: flex;
   flex-wrap: wrap;
   justify-content: space-around; */
+
   /*  way 2 */
   display: grid;
   grid-template-columns: auto auto auto;
@@ -27,6 +28,11 @@ body {
   width: 300px;
   display: inline-block;
   margin-bottom: 20px;
+  transition: filter 0.5s, box-shadow 0.5s;
+}
+.col:hover {
+  box-shadow: 8px -7px 9px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.4);
 }
 
 .preview img {
